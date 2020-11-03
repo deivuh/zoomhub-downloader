@@ -13,12 +13,12 @@
 # GNU General Public License for more details.
 
 import multiprocessing
-import Queue
+import queue
 import requests
 import sys
 import threading
 from PIL import Image
-from StringIO import StringIO
+from io import StringIO
 
 class DownloadThread(threading.Thread):
     def __init__(self, tile_info_queue, tile_queue):
